@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+新细明体      \65B0\7EC6\660E\4F53
+细明体        \7EC6\660E\4F53
+标楷体        \6807\6977\4F53
+黑体          \9ED1\4F53
+宋体          \5B8B\4F53
+新宋体        \65B0\5B8B\4F53
+仿宋          \4EFF\5B8B
+楷体          \6977\4F53
+仿宋_GB2312   \4EFF\5B8B_GB2312
+楷体_GB2312   \6977\4F53_GB2312
+微软正黑体     \5FAE\x8F6F\6B63\9ED1\4F53
+微软雅黑       \5FAE\8F6F\96C5\9ED1
+*/
+@charset "UTF-8";
+/*limited reset*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr, input, textarea{margin: 0;padding: 0;border: 0;list-style: none;outline: 0;}
+a {text-decoration: none;color: #7bb507;}
+img {max-width: 100%; height: auto; width: auto\9; /* ie8 */}
+address,cite,dfn,em,var{font-style:normal;}
+#logo{
+	width: 100%;
+	display: block;
+	height: 27%;
+	position: relative;
+	top: 0px;
+}
+/*中奖样式*/
+.custom_lottery{
+	background: #CB1573;
+	width: 96px;
+	text-align: center;
+	height: 90px;
+	position: absolute;
+}
+.custom_lottery .shadow{
+	 background: #A3115C;
+	 width: 96px;
+	 height: 6px;
+	 position: absolute;
+	 bottom: -5px;
+}
+
+.custom_lottery .icon1{
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   width: 50%;
+   height: 50%;
+ 		text-align: center;
+ 		line-height: 100%;
+		transform: translateY(50%);
+   	color: #FFF799;
+}
+
+
+
+
+
+
+/*不中奖样式*/
+.custom_no_lottery{
+	background: #D84190;
+	width: 96px;
+	text-align: center;
+	height: 90px;
+	position: absolute;
+}
+.custom_no_lottery .shadow{
+	 background: #A3115C;
+	 width: 96px;
+	 height: 6px;
+	 position: absolute;
+	 bottom: -5px;
+}
+
+.custom_no_lottery .icon1{
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+   width: 50%;
+   height: 50%;
+ 		text-align: center;
+ 		line-height: 100%;
+		transform: translateY(50%);
+   	color: #FFF799;
+}
+
+
+/*选择旋转样式*/
+.game_checked{
+	background: greenyellow;
+	width: 96px;
+	height: 96px;
+	opacity: 0.7;
+}
+
+
+#drive_tips .content5 {
+  width: 100%;
+  margin: 0 2% 25px 0.2%;
+}
+#drive_tips article {
+  position: relative;
+  float: left;
+  margin-bottom: 23px;
+}
+#drive_tips .content5 .title {
+  background: url(../images/960_title3.jpg) no-repeat;
+}
+#drive_tips .title {
+  display: inline-block;
+}
+#drive_tips .title {
+  font-family: 黑体,'\9ED1\4F53';
+  font-size: 20px;
+  color: #fff;
+  height: 52px;
+  line-height: 54px;
+  width: 100%;
+  overflow: hidden;
+}
+#drive_tips .title .title1 {
+  margin: 0 10px;
+}
+#drive_tips .content5 .title2 {
+  font-size: 12px;
+}
+/*174 462 649*/
+#drive_tips .content5 .game_bg {
+  width: 305px;
+  height: 310px;
+  position: relative;
+  padding: 0px 0 0 2.7%;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#drive_tips .content5 .game {
+  width: 95%;
+  overflow: hidden;
+  position: absolute;
+  top: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#drive_tips .content5 .game li {
+  position: relative;
+  display: inline;
+  float: left;
+  max-width: 33.3%;
+  width: 96px;
+  height: 96px;
+  padding-bottom: 3px;
+  margin: 0 3px 0 0;
+  overflow: hidden;
+}
+#drive_tips .content5 .game li.li_5 {
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+}
+#drive_tips .content5 .game li .game_checked {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#layer_box_award, #layer_box_award1, #layer_box_award2, #layer_box_award3 {
+  width: 287px;
+  height: 221px;
+}
+.layer_boxs {
+  position: relative;
+  overflow: hidden;
+  display: none;
+  color: #00873b;
+}
+.layer_boxs .closePop {
+  background: url(../images/blank.gif) no-repeat;
+  width: 38px;
+  top: 0px;
+  right: 0px;
+  height: 38px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+#layer_box_award .bg, #layer_box_award1 .bg, #layer_box_award2 .bg, #layer_box_award3 .bg {
+  background: url(../images/layer2.gif) no-repeat;
+  width: 287px;
+  height: 221px;
+}
+.layer_boxs .box {
+  width: 310px;
+  height: 115px;
+  margin-top: 50px;
+}
+.layer_boxs .bg {
+  position: absolute;
+}
+.layer_boxs .box2 {
+  margin-top: 80px;
+  height: 70px;
+}
+.layer_boxs p {
+  width: 310px;
+  text-align: center;
+  height: 18px;
+  line-height: 18px;
+}
+.layer_boxs .box2 p, .layer_boxs .box2_btn {
+  width: 287px;
+}
+#drive_tips .content5 .game li.ov .game_checked {
+  display: block;
+}
+.layer_boxs .bold {
+  font-weight: bold;
+  font-size: 14px;
+}
+.layer_boxs .sure_btn {
+  background: url(../images/sure_btn.jpg) no-repeat;
+  width: 86px;
+}
+.layer_boxs a {
+  display: inline-block;
+  height: 35px;
+}
+/*底部的div*/
+#bottom{
+	position: relative;
+	left: 0px;
+	top: -30px;
+}
+#bottom >button{
+	color: #FFBD6C;
+	background: #7F2789;
+	border: 0px ;
+	width: 305px;
+	position: relative;
+	left: 50%;
+	text-align: right;
+	transform: translateX(-50%);
+	top: 0;
+	outline:none;
+}
+#bottom >p{
+	color: #C9B0DA;
+	font-size: 14px;
+	line-height: 24px;
+	text-indent:2em;
+	
+}
